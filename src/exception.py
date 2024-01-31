@@ -21,9 +21,9 @@ class CustomException(Exception):
         return self.error_message
     
 #check code
-# if __name__ == '__main__':
-#     try:
-#         a = 1 / 0
-#     except Exception as e:
-#         logging.info("An error occurred: " + str(e))
+if __name__ == '__main__':
+    try:
+        a = 1 / 0
+    except Exception as e:
+        logging.info("An error occurred: " + str(e))
 #         raise CustomException("Divide by zero error", sys) from e
